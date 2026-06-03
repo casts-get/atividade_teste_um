@@ -9,6 +9,7 @@
         <th>ID</th>
         <th>Usuário</th>
         <th>Senha</th>
+        <th> Ações</th>
     </tr>
     <!-- Cabeçalho da tabela -->
 
@@ -29,7 +30,14 @@
             <td>" . $linha["id"] . "</td>
             <td>" . $linha["usuario"] . "</td>
             <td>" . $linha["senha"] . "</td>
-            
+
+            <td>
+            <a href='excluir.php?id=" . $linha["id"] . "'
+            onclick='return confirm(\"Deseja realmente excluir este usuário?\")'>
+            Excluir
+            </a>
+            </td>
+
         
         </tr>";
          // Cria uma linha da tabela para cada usuário encontrado
