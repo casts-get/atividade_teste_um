@@ -45,3 +45,26 @@ Os dados dos usuários são armazenados em uma tabela chamada usuario, contendo 
 * Como controlar acesso a páginas protegidas por meio de autenticação.
 * Como exibir informações do banco de dados em tabelas HTML.
 * A importância da segurança em sistemas de login, especialmente no armazenamento de senhas e na prevenção de SQL Injection.
+
+
+## Funcionalidade de Exclusão de Usuários (Não Concluída)
+## Como a funcionalidade poderia ser implementada
+
+A funcionalidade de exclusão poderia ser implementada através de um botão ou link "Excluir" disponível na tabela de usuários. Ao clicar nesse botão, o ID do usuário seria enviado para um arquivo PHP responsável por localizar e remover o registro correspondente do banco de dados.
+
+## Quais arquivos precisariam ser modificados
+table.php
+excluir.php 
+Arquivo de conexão com o banco de dados
+
+## Qual seria a lógica necessária para realizar a exclusão
+
+Receber o ID do usuário pela URL.
+Conectar ao banco de dados.
+Executar um comando SQL para excluir o usuário selecionado.
+Atualizar a lista de usuários após a exclusão.
+
+## Quais pesquisas, testes ou tentativas foram realizadas durante o desenvolvimento
+
+Foi realizada uma tentativa de implementar o botão de exclusão na tabela de usuários, utilizando um link que envia o ID do usuário para o arquivo excluir.php. Também foram feitas pesquisas sobre exclusão de registros e sobre a utilização de parâmetros.
+
